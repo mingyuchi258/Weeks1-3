@@ -1,3 +1,5 @@
+
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -5,7 +7,7 @@ public class spritechanger : MonoBehaviour
 {
     public SpriteRenderer spriteRenderer;
     public Color col;
-    public Sprite[] barrels;
+    public List<Sprite> barrels;
     public int randomNumber;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -16,9 +18,9 @@ public class spritechanger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (Keyboard.current.anyKey.wasPressedThisFrame) {
-        //   PickARandomcolor();
-        //}
+        if (Keyboard.current.anyKey.wasPressedThisFrame) {
+           PickARandomcolor();
+        }
 
 
         //get the mouce position
@@ -30,6 +32,9 @@ public class spritechanger : MonoBehaviour
         else {
             spriteRenderer.color = Color.white;
         }
+        if (Mouse.current.leftButton.wasPressedThisFrame == true) {
+            barrels.RemoveAt(0);
+        }
     }
     void PickARandomcolor() {
         spriteRenderer.color = Random.ColorHSV();
@@ -37,7 +42,7 @@ public class spritechanger : MonoBehaviour
 
     void PickARandomSprite() {
 
-        randomNumber = Random.Range(0, barrels.Length);
+        randomNumber = Random.Range(0, barrels.Count);
 
         randomNumber = Random.Range(0, 3);
         spriteRenderer.sprite = barrels[randomNumber];
