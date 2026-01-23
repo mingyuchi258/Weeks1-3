@@ -17,12 +17,12 @@ public class move : MonoBehaviour
         transform.position = newP;
 
         Vector2 screenP = Camera.main.WorldToScreenPoint(transform.position);
-        if (screenP.x < 70)
+        if (screenP.x < 90)
         {
             speed = speed * -1;
         }
 
-        if (screenP.x >Screen.width - 70)
+        if (screenP.x >Screen.width - 90)
         {
             speed = speed * -1;
         }
