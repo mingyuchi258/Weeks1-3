@@ -16,8 +16,9 @@ public class linear : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //create a linear interpolation that moves from the starting point to the ending point
         transform.position = Vector2.Lerp(plane.position, alien.position, s);
-
+        //s increases with time, and if it is greater than one, it is set to zero
         s += Time.deltaTime;
         if (s > 1)
         {

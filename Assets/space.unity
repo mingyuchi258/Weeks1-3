@@ -3060,7 +3060,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 959803505507294820, guid: 5d5114326cfaaf04ab087a9d5231532c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3119,6 +3119,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plane: {fileID: 852991496}
   alien: {fileID: 1602088295}
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!212 &769584376
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3500,7 +3524,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 5714456842437531129, guid: 7285f196a439c5d499a00155d010156e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3601,7 +3625,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 1474014828341702776, guid: bc1585388a6fc4d4a9eac290b65ae677, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3684,6 +3708,7 @@ GameObject:
   - component: {fileID: 1602088295}
   - component: {fileID: 1602088294}
   - component: {fileID: 1602088293}
+  - component: {fileID: 1602088296}
   m_Layer: 0
   m_Name: alien
   m_TagString: Untagged
@@ -3747,7 +3772,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 9073923503871355449, guid: fd7151c79a3075a40b226120446e074a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3774,6 +3799,62 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1602088296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602088292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 899831c4b4bd7674a82f37f83489ee86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  c:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -0.077778816
+      value: 0.6492615
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.5344764
+      value: 0.663897
+      inSlope: 1.4121265
+      outSlope: 1.4121265
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.24069473
+      outWeight: 0.042441934
+    - serializedVersion: 3
+      time: 0.6237238
+      value: 0.77136266
+      inSlope: 0.80041844
+      outSlope: 0.80041844
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.19024982
+      outWeight: 0.090160005
+    - serializedVersion: 3
+      time: 1.1222229
+      value: 0.71775055
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  s: 0
+  y: 0
 --- !u!1 &2068861311
 GameObject:
   m_ObjectHideFlags: 0
@@ -3848,7 +3929,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 4989708251766280082, guid: 75beb1d5ffb58024a8377d03968604d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

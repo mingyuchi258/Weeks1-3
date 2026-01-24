@@ -14,12 +14,13 @@ public class curve : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //s increases with time, and if it is greater than one, it is set to zero
         s += Time.deltaTime;
         if (s > 1)
         {
             s = 0;
         }
-
+        //use curve to control alien
         y = c.Evaluate(s);
         transform.localScale = new Vector2(y, y);
 
