@@ -2996,7 +2996,7 @@ GameObject:
   m_Component:
   - component: {fileID: 550343361}
   - component: {fileID: 550343360}
-  - component: {fileID: 550343359}
+  - component: {fileID: 550343362}
   m_Layer: 0
   m_Name: meteorite (3)
   m_TagString: Untagged
@@ -3004,19 +3004,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &550343359
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 550343358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd72ac43ac99a3a4ca2a4aa511a2655b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: {x: 2, y: 3}
 --- !u!212 &550343360
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3087,6 +3074,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &550343362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550343358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 492185466e5c7b44ea6553b0723eb8fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: {x: 2, y: 3}
 --- !u!1 &769584374
 GameObject:
   m_ObjectHideFlags: 0
@@ -3097,7 +3097,7 @@ GameObject:
   m_Component:
   - component: {fileID: 769584377}
   - component: {fileID: 769584376}
-  - component: {fileID: 769584375}
+  - component: {fileID: 769584378}
   m_Layer: 0
   m_Name: attack
   m_TagString: Untagged
@@ -3105,44 +3105,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &769584375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 769584374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a00b833eeccb8f343807745ace0bcc6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  plane: {fileID: 852991496}
-  alien: {fileID: 1602088295}
-  curve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 2
-      outSlope: 2
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!212 &769584376
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3213,6 +3175,44 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &769584378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769584374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6d852e204511b446b4dbfa39be93a8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plane: {fileID: 852991496}
+  alien: {fileID: 1602088295}
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &847761784
 GameObject:
   m_ObjectHideFlags: 0
@@ -3360,7 +3360,7 @@ GameObject:
   m_Component:
   - component: {fileID: 852991496}
   - component: {fileID: 852991495}
-  - component: {fileID: 852991494}
+  - component: {fileID: 852991497}
   m_Layer: 0
   m_Name: plane
   m_TagString: Untagged
@@ -3368,18 +3368,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &852991494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 852991493}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81f59dce7cf2a524996f8434ab843f5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &852991495
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3450,6 +3438,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &852991497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852991493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0096ca30ff746ce48a3ed690196e1e45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &968569640
 GameObject:
   m_ObjectHideFlags: 0
@@ -3460,7 +3460,7 @@ GameObject:
   m_Component:
   - component: {fileID: 968569643}
   - component: {fileID: 968569642}
-  - component: {fileID: 968569641}
+  - component: {fileID: 968569644}
   m_Layer: 0
   m_Name: meteorite (2)
   m_TagString: Untagged
@@ -3468,19 +3468,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &968569641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 968569640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd72ac43ac99a3a4ca2a4aa511a2655b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: {x: 4, y: -6}
 --- !u!212 &968569642
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3551,6 +3538,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &968569644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968569640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 492185466e5c7b44ea6553b0723eb8fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: {x: 4, y: -6}
 --- !u!1 &1099409501
 GameObject:
   m_ObjectHideFlags: 0
@@ -3561,7 +3561,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1099409504}
   - component: {fileID: 1099409503}
-  - component: {fileID: 1099409502}
+  - component: {fileID: 1099409505}
   m_Layer: 0
   m_Name: meteorite (1)
   m_TagString: Untagged
@@ -3569,19 +3569,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1099409502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1099409501}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd72ac43ac99a3a4ca2a4aa511a2655b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: {x: -3, y: 5}
 --- !u!212 &1099409503
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3652,6 +3639,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1099409505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099409501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 492185466e5c7b44ea6553b0723eb8fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: {x: -3, y: 5}
 --- !u!1 &1419175387
 GameObject:
   m_ObjectHideFlags: 0
@@ -3707,8 +3707,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1602088295}
   - component: {fileID: 1602088294}
-  - component: {fileID: 1602088293}
-  - component: {fileID: 1602088296}
+  - component: {fileID: 1602088297}
+  - component: {fileID: 1602088298}
   m_Layer: 0
   m_Name: alien
   m_TagString: Untagged
@@ -3716,19 +3716,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1602088293
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1602088292}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2abd716bf0e95944a27e87e7c745e44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
 --- !u!212 &1602088294
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3799,7 +3786,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1602088296
+--- !u!114 &1602088297
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3808,7 +3795,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1602088292}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 899831c4b4bd7674a82f37f83489ee86, type: 3}
+  m_Script: {fileID: 11500000, guid: 9a3cadd6c1b08ea40a31522846749f4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+--- !u!114 &1602088298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602088292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c14844e8446efe44a7cae689ae7b79e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   c:
@@ -3865,7 +3865,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2068861314}
   - component: {fileID: 2068861313}
-  - component: {fileID: 2068861312}
+  - component: {fileID: 2068861315}
   m_Layer: 0
   m_Name: meteorite
   m_TagString: Untagged
@@ -3873,19 +3873,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2068861312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2068861311}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd72ac43ac99a3a4ca2a4aa511a2655b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: {x: -6, y: -2}
 --- !u!212 &2068861313
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3956,6 +3943,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2068861315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068861311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 492185466e5c7b44ea6553b0723eb8fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: {x: -6, y: -2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
